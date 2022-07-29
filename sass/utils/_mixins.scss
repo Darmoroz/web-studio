@@ -1,0 +1,2 @@
+@mixin flex($dis:flex,$jc:center,$ai:center){display:$dis;justify-content:$jc;align-items:$ai;}
+@mixin absTopLeft($posit:absolute,$top:0,$left:0,){position:$posit;top:$top;left:$left;}

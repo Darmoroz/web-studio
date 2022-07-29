@@ -1,0 +1,29 @@
+body{
+	height: 100%;
+	font-family: $fontFamily;
+	letter-spacing: $letterSpacing;
+	color: getColor('primaryText');
+}
+
+.container {
+	max-width: $containersMaxWidth;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: $containersPadding;
+	padding-right: $containersPadding;
+	width: 100%;
+	
+		// .container--flex
+
+	&--flex {
+		@media  (min-width: getBrPoint('large')) {
+			display: flex;
+			align-items: baseline;
+		}
+	}
+}
+
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+}

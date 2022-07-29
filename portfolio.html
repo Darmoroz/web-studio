@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title lang="en">Web Studio</title>
+		<link rel="stylesheet" href="./css/main.min.css" />
+	</head>
+	<body>
+		<header class="page-header">
+			<div class="container container--flex">
+				<nav class="site-nav">
+					<a class="site-nav__logo site-nav__logo--mrg" href="./index.html">
+						<span class="site-nav__logo--accent">Web</span>Studio
+					</a>
+					<div class="menu-container" id="menu-container" data-menu>
+						<ul class="site-nav__menu">
+							<li class="menu__item">
+								<a class="menu__link" href="./index.html">Студия</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link menu__link--active" href="./portfolio.html">Портфолио</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="">Контакты</a></li>
+						</ul>
+						<ul class="site-nav__menu">
+							<li class="menu__item">
+								<a class="menu__link menu__link--contact" href="mailto:info@devstudio.com">
+									<svg class="icon icon--page-header">
+										<use href="./images/sprite.svg#icon-envelope"></use>
+									</svg>
+									info@devstudio.com
+								</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link menu__link--contact" href="tel:+380961111111">
+									<svg class="icon icon--page-header">
+										<use href="./images/sprite.svg#icon-smartphone"></use>
+									</svg>
+									+38 096 111 11 11
+								</a>
+							</li>
+						</ul>
+						<ul class="socials socials--hidden">
+							<li class="socials__item">
+								<a class="socials__link" href="https://instagram.com" target="_blank">
+									<span class="">instagram</span>
+								</a>
+							</li>
+							<li class="socials__item">
+								<a class="socials__link" href="https://twitter.com" target="_blank">
+									<span class="">twitter</span>
+								</a>
+							</li>
+							<li class="socials__item">
+								<a class="socials__link" href="https://facebook.com" target="_blank">
+									<span class="">facebook</span>
+								</a>
+							</li>
+							<li class="socials__item">
+								<a class="socials__link" href="https://linkedin.com" target="_blank">
+									<span class="">linkedin</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<button type="button" class="btn-burger" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+						<svg class="icon icon--burger" aria-label="Переключатель мобильного меню">
+							<use class="icon--menu" href="./images/sprite.svg#icon-menu"></use>
+							<use class="icon--close-bigger" href="./images/sprite.svg#icon-modal-close"></use>
+						</svg>
+					</button>
+				</nav>
+			</div>
+		</header>
+
+		<main class="section">
+			<div class="container">
+				<h1 class="section__title visually-hidden">Примеры работ</h1>
+				<ul class="btn-group">
+					<li class="btn-group__item">
+						<button class="btn btn--grey" type="button">Все</button>
+					</li>
+					<li class="btn-group__item">
+						<button class="btn btn--grey" type="button">Веб-сайты</button>
+					</li>
+					<li class="btn-group__item">
+						<button class="btn btn--grey" type="button">Приложения</button>
+					</li>
+					<li class="btn-group__item">
+						<button class="btn btn--grey" type="button">Дизайн</button>
+					</li>
+					<li class="btn-group__item">
+						<button class="btn btn--grey" type="button">Маркетинг</button>
+					</li>
+				</ul>
+				<ul class="grid">
+					<li class="grid__item">
+						<a class="product" href="">
+							<div class="product__head">
+								<img class="product__img" src="./images/techno.jpg" alt="ноутбук" width="370" />
+								<p class="product__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+							</div>
+							<div class="product__content">
+								<h2 class="product__title">Технокряк</h2>
+								<p class="product__subtitle">Веб-сайт</p>
+							</div>
+						</a>
+					</li>
+
+					<li class="grid__item">
+						<a class="product" href="">
+							<div class="product__head">
+								<img class="product__img" src="./images/poster.jpg" alt="баскетболисты" width="370" />
+								<p class="product__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+							</div>
+							<div class="product__content">
+								<h2 class="product__title">Постер New Orlean vs Golden Star</h2>
+								<p class="product__subtitle">Дизайн</p>
+							</div>
+						</a>
+					</li>
+
+					<li class="grid__item">
+						<a class="product" href="">
+							<div class="product__head">
+								<img class="product__img" src="./images/seafood.jpg" alt="лого ресторану" width="370" />
+								<p class="product__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+							</div>
+							<div class="product__content">
+								<h2 class="product__title">Ресторан Seafood</h2>
+								<p class="product__subtitle">Приложения</p>
+							</div>
+						</a>
+					</li>
+
+					<li class="grid__item">
+						<a class="product" href="">
+							<div class="product__head">
+							<img class="product__img" src="./images/prime.jpg" alt="нуашники" width="370" />
+							<p class="product__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+							</div>
+							<div class="product__content">
+								<h2 class="product__title">Проект Prime</h2>
+								<p class="product__subtitle">Маркетинг</p>
+							</div>
+						</a>
+					</li>
+
+					<li class="grid__item">
+						<a class="product" href="">
+							<div class="product__head">
+								<img class="product__img" src="./images/boxes.jpg" alt="две коробки" width="370" />
+								<p class="product__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+							</div>
+							<div class="product__content">
+								<h2 class="product__title">Проект Boxes</h2>
+								<p class="product__subtitle">Приложения</p>
+							</div>
+						</a>
+					</li>
+
+					<li class="grid__item">
+						<a class="product" href="">
+							<div class="product__head">
+								<img class="product__img" src="./images/inspiration.jpg" alt="монитор" width="370" />
+								<p class="product__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+							</div>
+							<div class="product__content">
+								<h2 class="product__title">Inspiration has no Borders</h2>
+								<p class="product__subtitle">Веб-сайт</p>
+							</div>
+						</a>
+					</li>
+
+					<li class="grid__item">
+						<a class="product" href="">
+							<div class="product__head">
+								<img class="product__img" src="./images/limitededition.jpg" alt="журнал" width="370" />
+								<p class="product__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+							</div>
+							<div class="product__content">
+								<h2 class="product__title">Издание Limited Edition</h2>
+								<p class="product__subtitle">Дизайн</p>
+							</div>
+						</a>
+					</li>
+
+					<li class="grid__item">
+						<a class="product" href="">
+							<div class="product__head">
+								<img class="product__img" src="./images/lab.jpg" alt="етикетка одежды" width="370" />
+								<p class="product__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+							</div>
+							<div class="product__content">
+								<h2 class="product__title">Проект LAB</h2>
+								<p class="product__subtitle">Маркетинг</p>
+							</div>
+						</a>
+					</li>
+
+					<li class="grid__item">
+						<a class="product" href="">
+							<div class="product__head">
+								<img class="product__img" src="./images/growing.jpg" alt="робота за ноут" width="370" />
+								<p class="product__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+							</div>
+							<div class="product__content">
+								<h2 class="product__title">Growing Business</h2>
+								<p class="product__subtitle">Приложения</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</main>
+
+		<!-- Футер(підвал) -->
+		<footer class="page-footer">
+			<div class="container container--flex">
+				<div class="page-footer__col">
+					<a class="site-nav__logo site-nav__logo--footer" href="./index.html">
+						<span class="site-nav__logo--accent">Web</span>Studio
+					</a>
+					<address class="page-footer__contacts">
+						<p class="contacts__street" href="">г. Киев, пр-т Леси Украинки, 26</p>
+						<ul class="site-nav__menu site-nav__menu--column">
+							<li class="menu__item menu__item--footer">
+								<a class="menu__link menu__link--contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+							</li>
+							<li class="menu__item menu__item--footer">
+								<a class="menu__link menu__link--contact" href="tel:+380961111111">+38 096 111 11 11</a>
+							</li>
+						</ul>
+					</address>
+				</div>
+				<div class="page-footer__col">
+					<p class="page-footer__label">присоединяйтесь</p>
+					<ul class="socials">
+						<li class="socials__item">
+							<a class="socials__link socials__link--circle socials__link--dark" href="https://instagram.com" target="_blank">
+								<svg class="icon icon--socials icon--socials-inverse">
+									<use href="./images/sprite.svg#icon-instagram-1"></use>
+								</svg>
+								<span class="visually-hidden">instagram</span>
+							</a>
+						</li>
+						<li class="socials__item">
+							<a class="socials__link socials__link--circle socials__link--dark" href="https://twitter.com" target="_blank">
+								<svg class="icon icon--socials icon--socials-inverse">
+									<use href="./images/sprite.svg#icon-twitter-1"></use>
+								</svg>
+								<span class="visually-hidden">twitter</span>
+							</a>
+						</li>
+						<li class="socials__item">
+							<a class="socials__link socials__link--circle socials__link--dark" href="https://facebook.com" target="_blank">
+								<svg class="icon icon--socials icon--socials-inverse">
+									<use href="./images/sprite.svg#icon-facebook-1"></use>
+								</svg>
+								<span class="visually-hidden">facebook</span>
+							</a>
+						</li>
+						<li class="socials__item">
+							<a class="socials__link socials__link--circle socials__link--dark" href="https://linkedin.com" target="_blank">
+								<svg class="icon icon--socials icon--socials-inverse">
+									<use href="./images/sprite.svg#icon-linkedin-1"></use>
+								</svg>
+								<span class="visually-hidden">linkedin</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="page-footer__col">
+					<form class="subscribe-form">
+						<label for="email" class="page-footer__label">Подпишитесь на рассылку</label>
+						<div class="page-footer__wrapper">
+							<input type="email" name="user_email" id="email" class="subscribe-form__field" placeholder="E-mail" autocomplete="off">
+							<button type="submit" class="btn btn--flex">Подписаться<svg class="icon icon--subscribe"><use href="./images/sprite.svg#icon-form-send"></use></svg>
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</footer>
+		<script src="./js/menu.js"></script>
+	</body>
+</html>
