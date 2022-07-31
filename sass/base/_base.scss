@@ -16,10 +16,17 @@ body{
 		// .container--flex
 
 	&--flex {
-		@media  (min-width: getBrPoint('large')) {
-			display: flex;
-			align-items: baseline;
+		@media (min-width: getBrPoint('medium')) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
 		}
+		@media  (min-width: getBrPoint('large')) {
+			align-items: baseline;
+			flex-wrap: nowrap;
+			justify-content: space-between;
+		}
+
 	}
 }
 

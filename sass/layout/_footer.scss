@@ -9,7 +9,16 @@
 	// .page-footer__col
 
 	&__col {
+		@media (min-width: getBrPoint('medium')) and (max-width: getBrPoint('large')){
+			flex: 1 1 50%;
+			justify-content: center;
+			text-align: center;
+			&:last-child {
+				margin-top: $mrgDefault;
+			}
+		}
 		flex: 0 1 100%;
+		margin-right: 70px;
 	}
 
 	// .page-footer__contacts
@@ -30,6 +39,8 @@
 		text-transform: uppercase;
 		@media (max-width: getBrPoint('medium')) {
 			margin-top: 60px;
+		}
+		@media (min-width:('large')) {
 		}
 	}
 
@@ -59,7 +70,7 @@
 
 
 .subscribe-form {
-	@media (max-width: getBrPoint('medium')) {
+	@media (min-width: getBrPoint('medium')) {
 	}
 
 	// .subscribe-form__field
@@ -70,7 +81,8 @@
 			margin-bottom: 20px;
 		}
 		@media  (min-width: getBrPoint('medium')) {
-			width: 358px;
+			width: 450px;
+			margin-bottom: 20px;
 		}
 		margin-right: 12px;
 		padding: 15px 16px;

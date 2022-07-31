@@ -76,15 +76,29 @@
 	// .benefits__list
 	
 	&__list {
-		@media  (min-width: getBrPoint('large')) {
+		@media (min-width: getBrPoint('medium')) {
 			display: flex;
+			flex-wrap: wrap;
+			gap: 30px;
 		}
+		@media (min-width: getBrPoint('large')){
+		flex-wrap:nowrap
+	}
 	}
 
 	// .benefits__item
 
 	&__item {
-		@media  (min-width: getBrPoint('large')) {
+		@media (max-width: getBrPoint('medium')) {
+			margin-bottom: $mrgDefault;
+		}
+		@media (min-width: getBrPoint('medium')){
+			flex: 0 1 48%;
+			&:last-child{
+				margin-bottom: 30px;
+			}
+		}
+		@media (min-width: getBrPoint('large')) {
 			&:not(:last-child) {
 				margin-right: $mrgDefault;
 			}
@@ -140,8 +154,13 @@
 }
 
 .team {
-	@media  (min-width: getBrPoint('large')) {
+		@media (min-width: getBrPoint('medium')) {
 		display: flex;
+		flex-wrap: wrap;
+		gap: $mrgDefault;
+	}
+	@media (min-width: getBrPoint('large')) {
+		flex-wrap: nowrap;
 	}
 
 	// .team__item
@@ -160,7 +179,9 @@
 		}
 		@media (max-width: getBrPoint('medium')) {
 			margin-bottom: $mrgDefault;
-			
+		}
+		@media (min-width: getBrPoint('medium')) {
+		flex: 0 1 48%;
 		}
 	}
 
@@ -202,10 +223,21 @@
 
 		@media (min-width: getBrPoint('medium')) {
 		&--mrgbig {
-			&:not(:last-child) {
-				margin-right: $mrgDefault;
-			}
+			flex: 1 0 30%;
 		}
+	}
+		@media (max-width: getBrPoint('medium')) {
+		&--mrgbig {
+			width: 210px;
+		}
+	}
+	@media (min-width: getBrPoint('large')) {
+				&--mrgbig {
+				flex: 0 1 auto;
+				&:not(:last-child){
+					margin-right: 30px;
+				}
+			}
 	}
 	}
 
@@ -232,10 +264,14 @@
 		// .socials__link--bigger
 
 		&--bigger {
-			width: 170px;
-			height: 92px;
-			border: 1px solid getColor('logoSocial');
 			border-radius: 4px;
+			border: 1px solid getColor('logoSocial');
+			height: 92px;
+			@media (min-width: getBrPoint('large')) {
+				width: 170px;
+				margin-right: 0;
+			}
+
 			&:hover, &:focus {
 				border-color: getColor('accent');
 				.icon--socials {
@@ -253,7 +289,8 @@
 }
 
 .socials--mob {
-	@media (max-width: getBrPoint('medium')) {
+	
+	@media (max-width: getBrPoint('large')) {
 		flex-wrap: wrap;
 		justify-content: center;
 		gap: 30px;
@@ -261,8 +298,11 @@
 			margin-right: 0;
 		}
 		& .socials__link {
-			width: 210px;
+			max-width: 210px;
 		}
+	}
+	@media (min-width: getBrPoint('large')) {
+		flex-wrap: nowrap;
 	}
 }
 
