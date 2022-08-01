@@ -126,8 +126,9 @@
 				justify-content: center;
 			}
 			@media  (min-width: getBrPoint('large')) {
+				&.site-nav__menu{
 				flex-direction: column
-
+				}
 			}
 		}
 	}

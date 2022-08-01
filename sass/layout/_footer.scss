@@ -18,7 +18,14 @@
 			}
 		}
 		flex: 0 1 100%;
-		margin-right: 70px;
+		@media (min-width: getBrPoint('large')) {
+			&:not(:last-child){
+			margin-right: 70px;
+			}
+		}
+		&>.socials{
+			justify-content: flex-start;
+		}
 	}
 
 	// .page-footer__contacts
@@ -80,9 +87,12 @@
 			width: 100%;
 			margin-bottom: 20px;
 		}
-		@media  (min-width: getBrPoint('medium')) {
+		@media  (min-width: getBrPoint('medium')) and (max-width: getBrPoint('large')){
 			width: 450px;
 			margin-bottom: 20px;
+		}
+		@media (min-width: grtBrPoint('large')) {
+			max-width: 450px;
 		}
 		margin-right: 12px;
 		padding: 15px 16px;
