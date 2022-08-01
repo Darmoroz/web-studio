@@ -881,9 +881,9 @@ body {
   .page-footer__col:not(:last-child) {
     margin-right: 70px;
   }
-}
-.page-footer__col > .socials {
-  justify-content: flex-start;
+  .page-footer__col > .socials {
+    justify-content: flex-start;
+  }
 }
 .page-footer__contacts {
   font-style: normal;
