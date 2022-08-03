@@ -1296,6 +1296,13 @@ body.modal-open {
 .btn--flex {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1200px) {
+  .btn--flex {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 .btn--grey {
   padding: 6px 22px;

@@ -21,8 +21,11 @@
 	&--flex {
 		display: flex;
 		align-items: center;
-		// margin-right: auto;
-		// margin-left: auto;
+		justify-content: center;
+		@media (max-width:getBrPoint('large')) {
+			margin-right: auto;
+			margin-left: auto;
+		}
 	}
 
 	// .btn--grey
