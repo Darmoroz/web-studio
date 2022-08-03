@@ -5,13 +5,26 @@ body{
 	color: getColor('primaryText');
 }
 
+img{
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
 .container {
-	max-width: $containersMaxWidth;
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: $containersPadding;
 	padding-right: $containersPadding;
-	width: 100%;
+	@media (min-width:getBrPoint('small')) {
+		width: 480px;
+	}
+	@media (min-width:getBrPoint('medium')) {
+		width: 768px;
+	}
+	@media (min-width:getBrPoint('large')) {
+		width: 1200px;
+	}
 	
 		// .container--flex
 
