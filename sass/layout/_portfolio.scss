@@ -34,12 +34,16 @@
 	// .grid__item
 
 	&__item {
-		flex-basis: calc(100% / 3 - $mrgDefault);
 		@media (max-width: getBrPoint('medium')) {
 			&:not(:last-child) {
 				margin-bottom: $mrgDefault;
 			}
-			
+		}
+		@media (min-width:getBrPoint('medium')) {
+			flex-basis: calc(50% - 15px);
+		}
+		@media (min-width:getBrPoint('large')) {
+			flex-basis: calc(100% / 3 - 20px);
 		}
 	}
 }

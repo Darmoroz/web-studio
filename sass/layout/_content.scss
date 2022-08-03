@@ -12,6 +12,9 @@
 	@media (max-width:getBrPoint('medium')) {
 		padding: 118px 60px;
 	}
+	@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+		background-image: linear-gradient(45deg, rgba(47, 48, 58, .4), rgba(47, 48, 58, .4)), url('../images/imghero@2x.jpg');
+		}
 
 
 	// .hero__wrapper
@@ -43,7 +46,7 @@
 	padding-top: 94px;
 	padding-bottom: 94px;
 	background-color: getColor('white');
-	@media (max-width:getBrPoint('medium')) {
+	@media (max-width:getBrPoint('large')) {
 		padding-top: 60px;
 		padding-bottom: 60px;
 	}
@@ -63,7 +66,7 @@
 		margin-bottom: 50px;
 		font-size: 2.25em;
 		text-align: center;
-		@media (max-width:getBrPoint('medium')) {
+		@media (max-width:getBrPoint('large')) {
 			font-size: 28px;
 			margin-bottom: 30px;
 		}
@@ -106,10 +109,7 @@
 			}
 		}
 		@media (min-width: getBrPoint('medium')){
-			flex: 0 1 48%;
-			&:last-child{
-				margin-bottom: 30px;
-			}
+			flex-basis: calc(50% - 15px);
 		}
 		@media (min-width: getBrPoint('large')) {
 			&:not(:last-child) {
@@ -170,7 +170,7 @@
 }
 
 .team {
-		@media (min-width: getBrPoint('medium')) {
+	@media (min-width: getBrPoint('medium')) {
 		display: flex;
 		flex-wrap: wrap;
 		gap: $mrgDefault;
@@ -186,6 +186,7 @@
 		flex-direction: column;
 		padding-bottom: 24px;
 		align-items: center;
+		flex-basis: calc(50% - 15px);
 		background-color: getColor('white');
 		border-radius: 0px 0px 4px 4px;
 		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -198,9 +199,6 @@
 			&:not(:last-child){
 				margin-bottom: $mrgDefault;
 			}
-		}
-		@media (min-width: getBrPoint('medium')) {
-		flex: 0 1 48%;
 		}
 	}
 
@@ -285,6 +283,10 @@
 			border-radius: 4px;
 			border: 1px solid getColor('logoSocial');
 			height: 92px;
+			@media (min-width: getBrPoint('medium')) {
+				width: 226px;
+				margin-right: 0;
+			}
 			@media (min-width: getBrPoint('large')) {
 				width: 170px;
 				margin-right: 0;
@@ -316,7 +318,7 @@
 			margin-right: 0;
 		}
 		& .socials__link {
-			max-width: 210px;
+			// max-width: 210px;
 		}
 	}
 	@media (min-width: getBrPoint('large')) {
