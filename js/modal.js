@@ -15,6 +15,7 @@ refs.modal.addEventListener('click', e => {
 
 window.addEventListener('keydown', e => {
   if (e.code !== 'Escape') {
+    console.log('abra');
     return;
   }
   if (document.body.classList.contains('modal-open')) {
